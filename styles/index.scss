@@ -1,0 +1,25 @@
+@import "./partials/resets";
+@import "./partials/typography";
+
+.home-main {
+  font-family: FiraCode-Regular;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.header {
+  &__h1 {
+    font-family: FiraCode-Bold;
+  }
+
+  &__nav {
+    padding: 1.5rem 0 0 0;
+  }
+
+  &__nav-li {
+    margin-left: -2.5rem;
+    list-style: none;
+  }
+}
