@@ -1,25 +1,36 @@
 @import "./partials/resets";
 @import "./partials/typography";
 
-.home-main {
+.home-body {
   font-family: FiraCode-Regular;
   padding: 1.5rem;
   background-color: black;
-  color: white;
+  color: rgb(255, 187, 0);
   min-height: 100vh;
 }
 
 .header {
   &__h1 {
     font-family: FiraCode-Bold;
+    cursor: pointer;
+  }
+
+  &__h1:hover {
+    text-decoration: none;
   }
 
   &__nav {
     padding: 1.5rem 0 0 0;
+    color: rgb(255, 187, 0);
   }
 
   &__nav-li {
     margin-left: -2.5rem;
     list-style: none;
+  }
+
+  &__nav-li:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }
