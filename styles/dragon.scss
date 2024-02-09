@@ -47,10 +47,20 @@
   overflow-y: auto;
   flex-grow: 1;
   padding-top: 6rem;
+  // height: 100vh;
+
+  &__container {
+    height: 100vh;
+  }
 
   &__header {
     font-family: FiraCode-Bold;
     margin-bottom: 1rem;
+  }
+
+  &__scroll {
+    font-style: italic;
+    margin-top: 4rem;
   }
 }
 
@@ -112,5 +122,10 @@
 }
 
 .info {
-  margin-top: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
+  &__container {
+    margin: 4rem;
+  }
 }

@@ -296,3 +296,15 @@ function pick(guess) {
     }
   }
 }
+
+document
+  .getElementById("scrollLink")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const scrollingElement = document.querySelector(".dragon-main");
+    const scrollHeight = scrollingElement.scrollHeight;
+    scrollingElement.scrollTo({
+      top: scrollHeight,
+      behavior: "smooth",
+    });
+  });
