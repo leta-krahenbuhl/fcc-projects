@@ -1,5 +1,6 @@
 @import "./partials/resets";
 @import "./partials/typography";
+@import "./partials/variables";
 
 .dragon-body {
   font-family: FiraCode-Regular;
@@ -7,9 +8,12 @@
   background-color: black;
   color: rgb(255, 187, 0);
   min-height: 100vh;
+  text-align: center;
 }
 
 .header {
+  text-align: left;
+
   &__h1 {
     font-family: FiraCode-Bold;
     cursor: pointer;
@@ -21,7 +25,7 @@
 
   &__nav {
     padding: 1.5rem 0 0 0;
-    color: rgb(255, 187, 0);
+    color: $primary-yellow;
   }
 
   &__nav-li {
@@ -38,52 +42,64 @@
 // for game:
 
 .game {
-  max-width: 500px;
-  max-height: 400px;
-  background-color: #ffffff;
-  color: #ffffff;
-  margin: 30px auto 0px;
-  padding: 10px;
+  max-width: 50rem;
+  max-height: 40rem;
+  background-color: black;
+  color: $primary-yellow;
+  margin: 0 auto 0 auto;
+  padding: 2rem;
+  border: 4px solid $primary-yellow;
   border-radius: 10px;
 
   &__header {
-    color: red;
+    color: $primary-yellow;
+    padding-bottom: 1.5rem;
+    font-family: FiraCode-Bold;
   }
-}
 
-body {
-  background-color: #0a0a23;
-}
+  &__stats {
+    border-bottom: 2px solid $primary-yellow;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    color: $primary-yellow;
+  }
 
-#text {
-  background-color: #0a0a23;
-  color: #ffffff;
-  padding: 10px;
-}
+  &__stat {
+    margin-right: 1rem;
+    padding-right: 1.5rem;
+    border-right: 2px solid $primary-yellow;
+  }
 
-#controls,
-#stats {
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #0a0a23;
-}
+  &__button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    border: 3px solid #feac32;
+    border-radius: 5px;
+    font-family: FiraCode-Regular;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  }
 
-#monsterStats {
-  display: none;
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #c70d0d;
-}
+  &__button:hover {
+    background-color: black;
+    color: $primary-yellow;
+  }
 
-.stat {
-  padding-right: 10px;
-}
+  &__controls {
+    padding: 2.3rem 0 2.3rem 0;
+  }
 
-button {
-  cursor: pointer;
-  color: #0a0a23;
-  background-color: #feac32;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+  &__text {
+    padding: 2.3rem;
+  }
+
+  &__monsterStats {
+    display: none;
+    border-top: 2px solid $primary-yellow;
+    border-bottom: 2px solid $primary-yellow;
+    padding: 5px;
+    color: $primary-yellow;
+    margin-top: 0.4rem;
+    padding: 1.5rem;
+  }
 }

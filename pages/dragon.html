@@ -17,43 +17,41 @@
       <nav class="header__nav">
         <ul class="header__nav-ul">
           <li class="header__nav-li">
-            <a href="./pages/dragon.html">Dragon Repeller</a>
+            <a href="./dragon.html">Dragon Repeller</a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <div class="game">
+    <main>
       <h1 class="game__header">Dragon Repeller</h1>
-      <div id="stats">
-        <span class="stat"
-          >XP: <strong><span id="xpText">0</span></strong></span
-        >
-        <span class="stat"
-          >Health: <strong><span id="healthText">100</span></strong></span
-        >
-        <span class="stat"
-          >Gold: <strong><span id="goldText">50</span></strong></span
-        >
+      <div class="game">
+        <article class="game__stats">
+          <span class="game__stat">XP: <span id="xpText">0</span></span>
+          <span class="game__stat"
+            >Health: <span id="healthText">100</span></span
+          >
+          <span class="game__stat">Gold: <span id="goldText">50</span></span>
+        </article>
+        <div class="game__controls" id="controls">
+          <button class="game__button" id="button1">GO TO STORE</button>
+          <button class="game__button" id="button2">GO TO CAVE</button>
+          <button class="game__button" id="button3">FIGHT DRAGON</button>
+        </div>
+        <article class="game__monsterStats" id="monsterStats">
+          <span class="game__stat"
+            >Monster Name: <span id="monsterName"></span
+          ></span>
+          <span class="game__stat"
+            >Health: <span id="monsterHealth"></span
+          ></span>
+        </article>
+        <div class="game__text" id="text">
+          Welcome to Dragon Repeller! <br />You must defeat the dragon that is
+          preventing people from leaving the town. You are in the town square.
+          Where do you want to go? <br />
+          Use the buttons above.
+        </div>
       </div>
-      <div id="controls">
-        <button id="button1">Go to store</button>
-        <button id="button2">Go to cave</button>
-        <button id="button3">Fight dragon</button>
-      </div>
-      <div id="monsterStats">
-        <span class="stat"
-          >Monster Name: <strong><span id="monsterName"></span></strong
-        ></span>
-        <span class="stat"
-          >Health: <strong><span id="monsterHealth"></span></strong
-        ></span>
-      </div>
-      <div id="text">
-        Welcome to Dragon Repeller! You must defeat the dragon that is
-        preventing people from leaving the town. You are in the town square.
-        Where do you want to go? Use the buttons above.
-      </div>
-    </div>
+    </main>
   </body>
 </html>
