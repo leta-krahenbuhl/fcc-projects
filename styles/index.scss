@@ -3,16 +3,20 @@
 @import "./partials/variables";
 
 .home-body {
+  display: flex;
   font-family: FiraCode-Regular;
   padding: 1.5rem;
   background-color: black;
   color: rgb(255, 187, 0);
   min-height: 100vh;
   text-align: center;
+  overflow-y: auto;
 }
 
 .header {
   text-align: left;
+  position: sticky;
+  top: 2rem;
 
   &__h1 {
     font-family: FiraCode-Bold;
@@ -31,6 +35,7 @@
   &__nav-li {
     margin-left: -2.5rem;
     list-style: none;
+    font-size: 1rem;
   }
 
   &__nav-li:hover {
