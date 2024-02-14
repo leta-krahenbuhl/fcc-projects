@@ -2,7 +2,7 @@
 @import "./partials/typography";
 @import "./partials/variables";
 
-.dragon-body {
+.calorie-counter-body {
   display: flex;
   font-family: FiraCode-Regular;
   padding: 1.5rem;
@@ -13,7 +13,7 @@
   overflow-y: auto;
 }
 
-.dragon-header {
+.calorie-counter-header {
   text-align: left;
   position: sticky;
   top: 2rem;
@@ -45,14 +45,21 @@
   }
 }
 
-.dragon-main {
+.calorie-counter-main {
   overflow-y: auto;
   flex-grow: 1;
   padding-top: 6rem;
+  text-align: center;
   // height: 100vh;
 
   &__container {
-    height: 100vh;
+    width: 40rem;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border: 4px solid $primary-yellow;
+    border-radius: 10px;
   }
 
   &__header {
@@ -66,15 +73,77 @@
   }
 }
 
+.calorie-counter {
+  &__budget-div {
+    margin-bottom: 2rem;
+  }
+
+  &__label {
+    font-family: FiraCode-Bold;
+  }
+
+  &__input {
+    background-color: black;
+    min-width: 10rem;
+    height: 2rem;
+    border: 2px solid $primary-yellow;
+    border-radius: 3px;
+    padding-left: 0.5rem;
+    color: $primary-yellow;
+    margin-left: 0.5rem;
+  }
+
+  &__input::placeholder {
+    color: $primary-yellow-dark;
+    opacity: 1; /* Firefox */
+    font-family: FiraCode-Regular;
+    font-size: 0.65rem;
+  }
+
+  &__controls {
+    margin-bottom: 1rem;
+  }
+
+  &__select {
+    background-color: $primary-yellow;
+    border-radius: 5px;
+    height: 2rem;
+    min-width: 5.5rem;
+    color: black;
+    padding-left: 0.4rem;
+    font-family: FiraCode-Regular;
+    margin: 0 1rem 0 0.5rem;
+  }
+
+  &__button {
+    background-color: $primary-yellow;
+    height: 2rem;
+    min-width: 5.5rem;
+    border-radius: 5px;
+    font-family: FiraCode-Regular;
+    margin-right: 1rem;
+  }
+
+  &__button:hover {
+    background-color: black;
+    border: 2px solid $primary-yellow;
+    color: $primary-yellow;
+    height: 2rem;
+    min-width: 5.5rem;
+    border-radius: 5px;
+    font-family: FiraCode-Regular;
+  }
+
+  &__buttons-container {
+    margin-top: 2rem;
+  }
+}
+
 .game {
-  max-width: 50rem;
-  max-height: 40rem;
+  //   max-width: 50rem;
+  //   max-height: 40rem;
   background-color: black;
   color: $primary-yellow;
-  margin: 0 auto 0 auto;
-  padding: 2rem;
-  border: 4px solid $primary-yellow;
-  border-radius: 10px;
 
   &__stats {
     border-bottom: 2px solid $primary-yellow;

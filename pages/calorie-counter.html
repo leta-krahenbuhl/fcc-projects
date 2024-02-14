@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/calorie-counter.css" />
+    <script src="../scripts/calorie-counter.js" defer></script>
+    <title>Calorie Counter</title>
+  </head>
+  <body class="calorie-counter-body">
+    <header class="calorie-counter-header">
+      <h1 class="calorie-counter-header__h1">
+        <a href="../index.html" class="calorie-counter-header__link"
+          >FreeCodeCamp <br />
+          Projects</a
+        >
+      </h1>
+      <nav class="calorie-counter-header__nav">
+        <ul class="calorie-counter-header__nav-ul">
+          <li class="calorie-counter-header__nav-li">
+            <a href="./dragon.html">Dragon Repeller</a>
+          </li>
+          <li class="calorie-counter-header__nav-li">
+            <a href="./calorie-counter.html">Calorie Counter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="calorie-counter-main">
+      <h1 class="calorie-counter-main__header">Calorie Counter</h1>
+      <div class="calorie-counter-main__container">
+        <form id="calorie-counter">
+          <div class="calorie-counter__budget-div">
+            <label for="budget" class="calorie-counter__label"
+              >Daily Budget</label
+            >
+            <input
+              type="number"
+              min="0"
+              id="budget"
+              placeholder="Daily calorie budget"
+              class="calorie-counter__input"
+              required
+            />
+          </div>
+
+          <div class="calorie-counter__controls">
+            <span>
+              <label for="entry-dropdown" class="calorie-counter__label"
+                >Add food or exercise:</label
+              >
+              <select
+                id="entry-dropdown"
+                name="options"
+                class="calorie-counter__select"
+              >
+                <option value="breakfast" selected>Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="exercise">Exercise</option>
+              </select>
+              <button
+                type="button"
+                id="add-entry"
+                class="calorie-counter__button"
+              >
+                Add Entry
+              </button>
+            </span>
+          </div>
+
+          <fieldset id="breakfast">
+            <legend>Breakfast</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="lunch">
+            <legend>Lunch</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Dinner</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Snacks</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Exercise</legend>
+            <div class="input-container"></div>
+          </fieldset>
+
+          <div class="calorie-counter__buttons-container">
+            <button type="submit" class="calorie-counter__button">
+              Calculate Remaining Calories
+            </button>
+            <button type="button" id="clear" class="calorie-counter__button">
+              Clear
+            </button>
+          </div>
+        </form>
+        <div id="output" class="output hide"></div>
+      </div>
+
+      <div class="calorie-counter-main__scroll">
+        <a href="#" id="scrollLink">more info...</a>
+      </div>
+
+      <article class="info">
+        <h2 class="info__header">About "Dragon Repeller"</h2>
+        <div class="info__text">
+          <ul class="info__ul">
+            <li class="info__li">
+              The code for this game is the code from the
+              <a class="info__link" href="https://freecodecamp.org/"
+                >FreeCodeCamp</a
+              >
+              course
+              <a
+                class="info__link"
+                href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+                >“Learn Basic JavaScript by Building a Role Playing Game”</a
+              >
+            </li>
+            <li class="info__li">
+              After completing the course I refactored the code into BEM/SASS
+              and personalised the layout
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
