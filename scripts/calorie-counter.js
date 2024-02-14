@@ -118,3 +118,15 @@ function clearForm() {
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
 clearButton.addEventListener("click", clearForm);
+
+document
+  .getElementById("scrollLink")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const scrollingElement = document.querySelector(".calorie-counter-main");
+    const scrollHeight = scrollingElement.scrollHeight;
+    scrollingElement.scrollTo({
+      top: scrollHeight,
+      behavior: "smooth",
+    });
+  });
