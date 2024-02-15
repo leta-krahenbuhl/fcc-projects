@@ -18,18 +18,19 @@ function isInvalidInput(str) {
 
 function addEntry() {
   const targetInputContainer = document.querySelector(
-    `#${entryDropdown.value} .input-container`
+    `#${entryDropdown.value} .calorie-counter__input-container`
   );
   const entryNumber =
     targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
   const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
-  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
+  <input type="text" class="calorie-counter__input2" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
   <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
   <input
     type="number"
     min="0"
     id="${entryDropdown.value}-${entryNumber}-calories"
+    class="calorie-counter__input2"
     placeholder="Calories"
   />`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
@@ -75,7 +76,7 @@ function calculateCalories(e) {
   <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
     remainingCalories
   )} Calorie ${surplusOrDeficit}</span>
-  <hr>
+  <hr class="calorie-counter__hr">
   <p>${budgetCalories} Calories Budgeted</p>
   <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>
@@ -103,7 +104,7 @@ function getCaloriesFromInputs(list) {
 
 function clearForm() {
   const inputContainers = Array.from(
-    document.querySelectorAll(".input-container")
+    document.querySelectorAll(".calorie-counter__input-container")
   );
 
   for (const container of inputContainers) {

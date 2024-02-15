@@ -100,6 +100,25 @@
     font-size: 0.65rem;
   }
 
+  &__input2 {
+    background-color: black;
+    min-width: 10rem;
+    height: 2rem;
+    border: 2px solid $primary-yellow;
+    border-radius: 3px;
+    padding-left: 0.5rem;
+    color: $primary-yellow;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input2::placeholder {
+    color: $primary-yellow-dark;
+    opacity: 1; /* Firefox */
+    font-family: FiraCode-Regular;
+    font-size: 0.65rem;
+  }
+
   &__controls {
     margin-bottom: 1rem;
   }
@@ -133,14 +152,26 @@
     min-width: 5.5rem;
     border-radius: 5px;
     font-family: FiraCode-Regular;
+    margin-right: 0.8rem;
   }
 
   &__buttons-container {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   &__fieldset {
     border: 2px solid $primary-yellow;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  &__hr {
+    border: 1px solid $primary-yellow;
   }
 }
 
