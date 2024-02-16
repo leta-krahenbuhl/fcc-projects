@@ -39,6 +39,7 @@ const monsters = [
     health: 300,
   },
 ];
+
 const locations = [
   {
     name: "town square",
@@ -103,6 +104,10 @@ const locations = [
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
+
+window.onload = function () {
+  document.querySelector("main").style.display = "block";
+};
 
 function update(location) {
   monsterStats.style.display = "none";
