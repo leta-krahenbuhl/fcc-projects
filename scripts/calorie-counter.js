@@ -22,6 +22,13 @@ function addEntry() {
   );
   const entryNumber =
     targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
+
+  if (entryNumber > 1) {
+    const hrElement = document.createElement("hr");
+    hrElement.className = "calorie-counter__hr1";
+    targetInputContainer.appendChild(hrElement);
+  }
+
   const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" class="calorie-counter__input2" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
@@ -32,7 +39,8 @@ function addEntry() {
     id="${entryDropdown.value}-${entryNumber}-calories"
     class="calorie-counter__input2"
     placeholder="Calories"
-  />`;
+  />
+  `;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
@@ -73,9 +81,11 @@ function calculateCalories(e) {
     budgetCalories - consumedCalories + exerciseCalories;
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
   output.innerHTML = `
-  <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
+  <span class="${surplusOrDeficit.toLowerCase()}" id="result">${Math.abs(
     remainingCalories
   )} Calorie ${surplusOrDeficit}</span>
+  <p class="calorie-counter__text">To gain weight, aim for a calorie surplus, to lose weight aim for a calorie deficit.</p>
+
   <hr class="calorie-counter__hr">
   <p>${budgetCalories} Calories Budgeted</p>
   <p>${consumedCalories} Calories Consumed</p>
