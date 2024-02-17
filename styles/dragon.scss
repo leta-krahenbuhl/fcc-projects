@@ -46,10 +46,10 @@
 }
 
 .dragon-main {
+  display: none; //to reduce flickering
   overflow-y: auto;
   flex-grow: 1;
   padding-top: 6rem;
-  // height: 100vh;
 
   &__container {
     height: 100vh;

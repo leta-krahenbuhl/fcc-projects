@@ -74,6 +74,7 @@ a {
 }
 
 .home-main {
+  display: none;
   text-align: center;
   width: 100vw;
   margin-top: 6rem;

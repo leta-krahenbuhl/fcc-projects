@@ -3,6 +3,10 @@ const textInput = document.querySelector("#text-input");
 const result = document.querySelector("#result");
 const inputTransformed = "";
 
+window.onload = function () {
+  document.querySelector("main").style.display = "block";
+};
+
 checkButton.addEventListener("click", clickCheckButton);
 
 function clickCheckButton() {
