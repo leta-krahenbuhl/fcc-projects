@@ -78,6 +78,7 @@ a {
   flex-grow: 1;
   padding-top: 6rem;
   text-align: center;
+  height: 100vh;
 }
 .calorie-counter-main__container {
   width: 33rem;
@@ -123,7 +124,7 @@ a {
   color: rgb(151, 111, 0);
   opacity: 1; /* Firefox */
   font-family: FiraCode-Regular;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
 }
 .calorie-counter__input2 {
   background-color: black;
@@ -140,7 +141,7 @@ a {
   color: rgb(151, 111, 0);
   opacity: 1; /* Firefox */
   font-family: FiraCode-Regular;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
 }
 .calorie-counter__controls {
   margin-bottom: 1rem;

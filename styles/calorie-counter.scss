@@ -50,7 +50,7 @@
   flex-grow: 1;
   padding-top: 6rem;
   text-align: center;
-  // height: 100vh;
+  height: 100vh;
 
   &__container {
     width: 33rem;
@@ -104,7 +104,7 @@
     color: $primary-yellow-dark;
     opacity: 1; /* Firefox */
     font-family: FiraCode-Regular;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
 
   &__input2 {
@@ -123,7 +123,7 @@
     color: $primary-yellow-dark;
     opacity: 1; /* Firefox */
     font-family: FiraCode-Regular;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
 
   &__controls {
