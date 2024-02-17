@@ -84,7 +84,7 @@ a {
 }
 .palindrome-checker-main__container {
   width: 30rem;
-  min-height: 10rem;
+  min-height: 17.4rem;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -96,6 +96,9 @@ a {
 .palindrome-checker-main__header {
   font-family: FiraCode-Bold;
   margin-bottom: 1rem;
+}
+.palindrome-checker-main__text {
+  margin-bottom: 2rem;
 }
 .palindrome-checker-main__input {
   background-color: black;
@@ -135,6 +138,7 @@ a {
 }
 .palindrome-checker-main__result {
   margin-top: 1.5rem;
+  font-family: FiraCode-Bold;
 }
 .palindrome-checker-main__scroll {
   font-style: italic;
