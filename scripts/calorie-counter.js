@@ -143,3 +143,13 @@ document
     );
     caloriesInfoElement.scrollIntoView({ behavior: "smooth" });
   });
+
+document
+  .getElementById("scrollLinkInfo")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const caloriesCounterElement = document.querySelector(
+      ".calorie-counter-main__top"
+    );
+    caloriesCounterElement.scrollIntoView({ behavior: "smooth" });
+  });

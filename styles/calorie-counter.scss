@@ -17,7 +17,6 @@
   text-align: left;
   position: fixed;
   top: 1.5rem;
-  // width: 100%;
 
   &__h1 {
     font-family: FiraCode-Bold;
@@ -51,13 +50,16 @@
   margin-left: 12rem;
   overflow-y: auto;
   flex-grow: 1;
-  padding-top: 4rem;
+  // padding-top: 4rem;
   text-align: center;
 
-  &__div {
+  &__top {
     height: 100vh;
     overflow-y: auto;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__container {
@@ -81,6 +83,17 @@
   }
 
   &__scroll:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  &__scroll-info {
+    margin-top: 4rem;
+    font-style: italic;
+    margin-top: 4rem;
+  }
+
+  &__scroll-info:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
   }
@@ -152,6 +165,7 @@
     padding-left: 0.4rem;
     font-family: FiraCode-Regular;
     margin: 0 1rem 0 0.5rem;
+    border: none;
   }
 
   &__button {
@@ -259,6 +273,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .calories-info {

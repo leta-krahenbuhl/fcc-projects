@@ -77,13 +77,15 @@ a {
   margin-left: 12rem;
   overflow-y: auto;
   flex-grow: 1;
-  padding-top: 4rem;
   text-align: center;
 }
-.calorie-counter-main__div {
+.calorie-counter-main__top {
   height: 100vh;
   overflow-y: auto;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .calorie-counter-main__container {
   width: 33rem;
@@ -103,6 +105,15 @@ a {
   margin-top: 4rem;
 }
 .calorie-counter-main__scroll:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.calorie-counter-main__scroll-info {
+  margin-top: 4rem;
+  font-style: italic;
+  margin-top: 4rem;
+}
+.calorie-counter-main__scroll-info:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -164,6 +175,7 @@ a {
   padding-left: 0.4rem;
   font-family: FiraCode-Regular;
   margin: 0 1rem 0 0.5rem;
+  border: none;
 }
 .calorie-counter__button {
   background-color: rgb(255, 187, 0);
@@ -254,6 +266,8 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .calories-info {
