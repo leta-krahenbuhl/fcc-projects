@@ -1,3 +1,3 @@
 window.onload = function () {
-  document.querySelector("main").style.display = "block";
+  document.querySelector("main").style.display = "flex";
 };

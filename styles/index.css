@@ -77,7 +77,7 @@ a {
   display: none;
   text-align: center;
   width: 100vw;
-  margin-top: 6rem;
+  align-items: center;
 }
 .home-main__container {
   text-align: left;
