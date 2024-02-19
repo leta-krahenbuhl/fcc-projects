@@ -314,3 +314,13 @@ document
       behavior: "smooth",
     });
   });
+
+document
+  .getElementById("scrollLinkInfo")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const caloriesCounterElement = document.querySelector(
+      ".dragon-main__container"
+    );
+    caloriesCounterElement.scrollIntoView({ behavior: "smooth" });
+  });
