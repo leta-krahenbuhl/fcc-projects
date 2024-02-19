@@ -90,7 +90,7 @@ a {
 }
 .dragon-main__scroll {
   font-style: italic;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 .dragon-main__scroll:hover {
   text-decoration: underline;
@@ -177,7 +177,7 @@ a {
   text-underline-offset: 5px;
 }
 .info__scroll-info {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   font-style: italic;
 }
 .info__scroll-info:hover {
