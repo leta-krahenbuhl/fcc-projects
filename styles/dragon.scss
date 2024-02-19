@@ -67,6 +67,11 @@
     font-style: italic;
     margin-top: 4rem;
   }
+
+  &__scroll:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
 }
 
 .game {
@@ -160,5 +165,10 @@
 
   &__scroll-info {
     margin-top: 4rem;
+  }
+
+  &__scroll-info:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
 }

@@ -36,3 +36,13 @@ document
       behavior: "smooth",
     });
   });
+
+document
+  .getElementById("scrollLinkInfo")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const caloriesCounterElement = document.querySelector(
+      ".palindrome-checker-main__page-container-top"
+    );
+    caloriesCounterElement.scrollIntoView({ behavior: "smooth" });
+  });

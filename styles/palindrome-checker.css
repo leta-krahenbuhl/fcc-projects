@@ -77,10 +77,18 @@ a {
   display: none;
   overflow-y: auto;
   flex-grow: 1;
-  padding-top: 6rem;
   text-align: center;
 }
+.palindrome-checker-main__page-container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
 .palindrome-checker-main__page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
 }
 .palindrome-checker-main__container {
@@ -111,6 +119,10 @@ a {
   color: rgb(255, 187, 0);
   margin-right: 0.5rem;
   font-family: FiraCode-Regular;
+}
+.palindrome-checker-main__input:focus {
+  outline: none;
+  background-color: rgb(34, 24, 0);
 }
 .palindrome-checker-main__input::placeholder {
   color: rgb(151, 111, 0);
@@ -143,12 +155,16 @@ a {
 }
 .palindrome-checker-main__scroll {
   font-style: italic;
-  margin-top: 6rem;
+  margin-top: 4rem;
+}
+.palindrome-checker-main__scroll:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .palindrome-checker-info {
   width: 33rem;
-  margin: -6rem auto 5rem auto;
+  margin: 0rem auto 0rem auto;
   padding: 2rem;
   border: 4px solid rgb(255, 187, 0);
   border-radius: 10px;
@@ -162,6 +178,14 @@ a {
   margin-bottom: 1rem;
 }
 .palindrome-checker-info__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.palindrome-checker-info__scroll {
+  margin-top: 4rem;
+  font-style: italic;
+}
+.palindrome-checker-info__scroll:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }/*# sourceMappingURL=palindrome-checker.css.map */

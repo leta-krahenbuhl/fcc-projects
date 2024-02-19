@@ -92,6 +92,10 @@ a {
   font-style: italic;
   margin-top: 4rem;
 }
+.dragon-main__scroll:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 
 .game {
   max-width: 50rem;
@@ -174,4 +178,8 @@ a {
 }
 .info__scroll-info {
   margin-top: 4rem;
+}
+.info__scroll-info:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }/*# sourceMappingURL=dragon.css.map */

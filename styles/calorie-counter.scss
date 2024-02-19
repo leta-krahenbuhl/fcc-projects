@@ -54,7 +54,7 @@
   text-align: center;
 
   &__top {
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: auto;
     flex-grow: 1;
     display: flex;
@@ -86,17 +86,6 @@
     text-decoration: underline;
     text-underline-offset: 5px;
   }
-
-  &__scroll-info {
-    margin-top: 4rem;
-    font-style: italic;
-    margin-top: 4rem;
-  }
-
-  &__scroll-info:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
 }
 
 .calorie-counter {
@@ -124,6 +113,12 @@
     padding-left: 0.5rem;
     color: $primary-yellow;
     margin-left: 0.5rem;
+    font-family: FiraCode-Regular;
+  }
+
+  &__input:focus {
+    outline: none;
+    background-color: $primary-yellow-darker;
   }
 
   &__input::placeholder {
@@ -143,6 +138,12 @@
     color: $primary-yellow;
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
+    font-family: FiraCode-Regular;
+  }
+
+  &__input2:focus {
+    outline: none;
+    background-color: $primary-yellow-darker;
   }
 
   &__input2::placeholder {
@@ -216,59 +217,6 @@
   }
 }
 
-.game {
-  //   max-width: 50rem;
-  //   max-height: 40rem;
-  background-color: black;
-  color: $primary-yellow;
-
-  &__stats {
-    border-bottom: 2px solid $primary-yellow;
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
-    color: $primary-yellow;
-  }
-
-  &__stat {
-    margin-right: 1rem;
-    padding-right: 1.5rem;
-    border-right: 2px solid $primary-yellow;
-  }
-
-  &__button {
-    cursor: pointer;
-    color: #0a0a23;
-    background-color: #feac32;
-    border: 3px solid #feac32;
-    border-radius: 5px;
-    font-family: FiraCode-Regular;
-    font-size: 1rem;
-    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
-  }
-
-  &__button:hover {
-    background-color: black;
-    color: $primary-yellow;
-  }
-
-  &__controls {
-    padding: 2.3rem 0 2.3rem 0;
-  }
-
-  &__text {
-    padding: 2.3rem;
-  }
-
-  &__monsterStats {
-    display: none;
-    border-top: 2px solid $primary-yellow;
-    border-bottom: 2px solid $primary-yellow;
-    padding: 5px;
-    color: $primary-yellow;
-    margin-top: 0.4rem;
-    padding: 1.5rem;
-  }
-}
-
 .calories-info-container {
   height: 100vh;
   display: flex;
@@ -297,6 +245,16 @@
   }
 
   &__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  &__scroll {
+    margin-top: 4rem;
+    font-style: italic;
+  }
+
+  &__scroll:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
   }
