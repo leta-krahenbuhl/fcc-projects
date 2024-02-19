@@ -97,6 +97,13 @@ a {
 .home-main__text {
   margin-bottom: 1rem;
 }
+.home-main__link {
+  margin-bottom: 1rem;
+}
+.home-main__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 .home-main__ascii {
   margin-top: 2rem;
   margin-left: 12rem;

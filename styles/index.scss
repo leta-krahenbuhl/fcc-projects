@@ -73,6 +73,15 @@
     margin-bottom: 1rem;
   }
 
+  &__link {
+    margin-bottom: 1rem;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
   &__ascii {
     margin-top: 2rem;
     margin-left: 12rem;
