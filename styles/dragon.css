@@ -178,6 +178,7 @@ a {
 }
 .info__scroll-info {
   margin-top: 4rem;
+  font-style: italic;
 }
 .info__scroll-info:hover {
   text-decoration: underline;
