@@ -1,1 +1,195 @@
-/*# sourceMappingURL=to-do.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2,
+h4,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  color: rgb(255, 187, 0);
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url("../../assets/fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraCode-Bold";
+  src: url("../../assets/fonts/FiraCode-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.to-do-body {
+  display: flex;
+  font-family: FiraCode-Regular;
+  padding: 1.5rem;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  height: 100vh;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.to-do-header {
+  text-align: left;
+  position: sticky;
+  top: 2rem;
+}
+.to-do-header__h1 {
+  font-family: FiraCode-Bold;
+  cursor: pointer;
+}
+.to-do-header__h1:hover {
+  text-decoration: none;
+}
+.to-do-header__nav {
+  padding: 1.5rem 0 0 0;
+  color: rgb(255, 187, 0);
+}
+.to-do-header__nav-li {
+  margin-left: -2.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+  font-size: 1rem;
+}
+.to-do-header__nav-li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.to-do-main {
+  display: none;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.to-do-main__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.to-do-main__header {
+  font-family: FiraCode-Bold;
+  margin-bottom: 1rem;
+}
+.to-do-main__scroll {
+  font-style: italic;
+  margin-top: 4rem;
+}
+.to-do-main__scroll:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.todo-app {
+  width: 30rem;
+  min-height: 30rem;
+  color: rgb(255, 187, 0);
+  margin: 0 auto 0 auto;
+  padding: 2rem;
+  border: 4px solid rgb(255, 187, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-form {
+  width: 25rem;
+  min-height: 10rem;
+  background-color: black;
+  margin: 2rem auto 2rem auto;
+  padding: 1rem;
+  border: 2px solid rgb(255, 187, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-form-header {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+
+.close-icon {
+  background-color: black;
+}
+
+.close-task-form-btn {
+  background-color: black;
+  border: none;
+}
+
+.btn {
+  min-width: 5rem;
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  border: 3px solid #feac32;
+  border-radius: 5px;
+  font-family: FiraCode-Regular;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: rgb(255, 187, 0);
+}
+
+.to-do-info-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.to-do-info {
+  max-width: 50rem;
+  max-height: 40rem;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  margin: 0 auto 0 auto;
+  padding: 2rem;
+  border: 4px solid rgb(255, 187, 0);
+  border-radius: 10px;
+  text-align: left;
+}
+.to-do-info__header {
+  font-family: FiraCode-Bold;
+  margin-bottom: 1rem;
+}
+.to-do-info__li {
+  margin-bottom: 1rem;
+}
+.to-do-info__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.to-do-info__scroll-info {
+  margin-top: 4rem;
+}
+.to-do-info__scroll-info:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=to-do.css.map */

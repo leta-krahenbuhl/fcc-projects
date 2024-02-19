@@ -5,63 +5,144 @@
     <link rel="stylesheet" href="../styles/to-do.css" />
     <title>LK-FCC: To Do</title>
   </head>
-  <body class="dragon-body">
-    <header class="dragon-header">
-      <h1 class="dragon-header__h1">
-        <a href="../index.html" class="dragon-header__link"
+  <body class="to-do-body">
+    <header class="to-do-header">
+      <h1 class="to-do-header__h1">
+        <a href="../index.html" class="to-do-header__link"
           >FreeCodeCamp <br />
           Projects</a
         >
       </h1>
-      <nav class="dragon-header__nav">
-        <ul class="dragon-header__nav-ul">
-          <li class="dragon-header__nav-li">
+      <nav class="to-do-header__nav">
+        <ul class="to-do-header__nav-ul">
+          <li class="to-do-header__nav-li">
             <a href="./dragon.html">Dragon Repeller Game</a>
           </li>
-          <li class="dragon-header__nav-li">
+          <li class="to-do-header__nav-li">
             <a href="./calorie-counter.html">Calorie Counter</a>
           </li>
-          <li class="dragon-header__nav-li">
+          <li class="to-do-header__nav-li">
             <a href="./palindrome-checker.html">Palindrome Checker *</a>
           </li>
-          <li class="dragon-header__nav-li">
+          <li class="to-do-header__nav-li">
             <a href="./to-do.html">To Do App</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="dragon-main">
-      <div class="dragon-main__container">
-        <h1 class="dragon-main__header">To Do</h1>
+    <main class="to-do-main">
+      <div class="to-do-main__container">
+        <h1 class="to-do-main__header">Todo App</h1>
+        <div class="todo-app">
+          <button id="open-task-form-btn" class="btn large-btn">
+            Add New Task
+          </button>
+          <!-- <div class="todo-app__container hidden"> -->
+          <form class="task-form hidden" id="task-form">
+            <div class="task-form-header">
+              <button
+                id="close-task-form-btn"
+                class="close-task-form-btn"
+                type="button"
+                aria-label="close"
+              >
+                <svg
+                  class="close-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                  width="30px"
+                  height="30px"
+                >
+                  <path
+                    fill="#F44336"
+                    d="M21.5 4.5H26.501V43.5H21.5z"
+                    transform="rotate(45.001 24 24)"
+                  />
+                  <path
+                    fill="#F44336"
+                    d="M21.5 4.5H26.5V43.501H21.5z"
+                    transform="rotate(135.008 24 24)"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="task-form-body">
+              <label class="task-form-label" for="title-input">Title</label>
+              <input
+                required
+                type="text"
+                class="form-control"
+                id="title-input"
+                value=""
+              />
+              <label class="task-form-label" for="date-input">Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date-input"
+                value=""
+              />
+              <label class="task-form-label" for="description-input"
+                >Description</label
+              >
+              <textarea
+                class="form-control"
+                id="description-input"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="task-form-footer">
+              <button
+                id="add-or-update-task-btn"
+                class="btn large-btn"
+                type="submit"
+              >
+                Add Task
+              </button>
+            </div>
+          </form>
+          <dialog id="confirm-close-dialog">
+            <form method="dialog">
+              <p class="discard-message-text">Discard unsaved changes?</p>
+              <div class="confirm-close-dialog-btn-container">
+                <button id="cancel-btn" class="btn">Cancel</button>
+                <button id="discard-btn" class="btn">Discard</button>
+              </div>
+            </form>
+          </dialog>
+          <div id="tasks-container"></div>
+          <!-- </div> -->
+        </div>
 
         <div class="dragon-main__scroll">
           <a href="#" id="scrollLink">more info...</a>
         </div>
       </div>
 
-      <div class="info-container">
-        <article class="info">
-          <h2 class="info__header">About "Dragon Repeller"</h2>
-          <div class="info__text">
-            <ul class="info__ul">
-              <li class="info__li">
+      <div class="to-do-info-container">
+        <article class="to-do-info">
+          <h2 class="to-do-info__header">About "Dragon Repeller"</h2>
+          <div class="to-do-info__text">
+            <ul class="to-do-info__ul">
+              <li class="to-do-info__li">
                 The code for this game is the code from the
                 <a
-                  class="info__link"
+                  class="to-do-info__link"
                   href="https://freecodecamp.org/"
                   target="blank"
                   >FreeCodeCamp</a
                 >
                 course
                 <a
-                  class="info__link"
+                  class="to-do-info__link"
                   href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
                   target="blank"
                   >“Learn Basic JavaScript by Building a Role Playing Game”</a
                 >
               </li>
-              <li class="info__li">
+              <li class="to-do-info__li">
                 After completing the course I refactored the code into BEM/SASS
                 and personalised the layout
               </li>
@@ -69,7 +150,7 @@
           </div>
         </article>
 
-        <div class="info__scroll-info">
+        <div class="to-do-info__scroll-info">
           <a href="#" id="scrollLinkInfo">back to top...</a>
         </div>
       </div>
