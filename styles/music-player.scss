@@ -75,7 +75,7 @@
 }
 
 .container {
-  width: 30rem;
+  width: 40rem;
   min-height: 30rem;
   color: $primary-yellow;
   margin: 0 auto 0 auto;
@@ -95,11 +95,69 @@
   margin-left: -7rem;
 }
 
+.playlist-title {
+  margin-bottom: 1rem;
+}
+
 .previous,
 .play,
 .pause,
 .next,
 .shuffle {
+  background-color: $primary-yellow-darker;
+  border: none;
+  width: 3rem;
+}
+
+.previous:hover,
+.play:hover,
+.pause:hover,
+.next:hover,
+.shuffle:hover {
+  background-color: $primary-yellow-dark;
+  border: none;
+  width: 3rem;
+}
+
+.player-buttons {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-yellow-darker;
+  margin-bottom: 2rem;
+}
+
+.playlist-song-delete {
   background-color: black;
   border: none;
+  cursor: pointer;
+}
+
+.playlist-songs {
+  padding: 0;
+  text-align: left;
+}
+
+.playlist-song {
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.playlist-song:hover,
+.playlist-song:hover .child {
+  background-color: $primary-yellow-darker;
+}
+
+.playlist-song-info {
+  background-color: black;
+  color: $primary-yellow;
+  font-family: FiraCode-Regular;
+  border: none;
+  // border-top: 2px solid $primary-yellow;
+  width: 92%;
+  text-align: left;
 }
