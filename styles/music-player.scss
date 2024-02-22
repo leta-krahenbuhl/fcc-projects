@@ -127,12 +127,18 @@
   justify-content: center;
   background-color: $primary-yellow-darker;
   margin-bottom: 2rem;
+  display: block;
+  padding-top: 0.8rem;
 }
 
 .playlist-song-delete {
   background-color: black;
   border: none;
   cursor: pointer;
+}
+
+.playlist-song:hover {
+  background-color: $primary-yellow-darker;
 }
 
 .playlist-songs {
@@ -147,9 +153,14 @@
   cursor: pointer;
 }
 
-.playlist-song:hover,
-.playlist-song:hover .child {
+.playlist-song:hover .playlist-song-info,
+.playlist-song:hover .playlist-song-delete {
   background-color: $primary-yellow-darker;
+  cursor: pointer;
+}
+
+.playlist-song-delete:hover {
+  background-color: $primary-yellow-dark;
 }
 
 .playlist-song-info {
@@ -160,4 +171,20 @@
   // border-top: 2px solid $primary-yellow;
   width: 92%;
   text-align: left;
+  position: sticky;
+}
+
+.player-display-song-artist {
+  font-family: FiraCode-Bold;
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0rem;
+}
+
+.player-display {
+  position: relative;
+  z-index: 1;
+  margin: 6.5rem auto 0rem auto;
+  display: flex;
+  justify-content: center;
 }

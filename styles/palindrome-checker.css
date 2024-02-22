@@ -60,7 +60,7 @@ a {
 }
 .palindrome-checker-header__nav {
   padding: 1.5rem 0 0 0;
-  color: rgb(255, 187, 0);
+  color: hsl(44, 100%, 50%);
 }
 .palindrome-checker-header__nav-li {
   margin-left: -2.5rem;
@@ -99,7 +99,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 2.5rem 5rem 2rem 5rem;
-  border: 4px solid rgb(255, 187, 0);
+  border: 4px solid hsl(44, 100%, 50%);
   border-radius: 10px;
   overflow-wrap: break-word;
 }
@@ -114,25 +114,25 @@ a {
   background-color: black;
   min-width: 10rem;
   height: 2rem;
-  border: 2px solid rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
   border-radius: 3px;
   padding-left: 0.5rem;
-  color: rgb(255, 187, 0);
+  color: hsl(44, 100%, 50%);
   margin-right: 0.5rem;
   font-family: FiraCode-Regular;
 }
 .palindrome-checker-main__input:focus {
   outline: none;
-  background-color: rgb(34, 24, 0);
+  background-color: #221800;
 }
 .palindrome-checker-main__input::placeholder {
-  color: rgb(151, 111, 0);
+  color: #976f00;
   opacity: 1; /* Firefox */
   font-family: FiraCode-Regular;
   font-size: 0.8rem;
 }
 .palindrome-checker-main__button {
-  background-color: rgb(255, 187, 0);
+  background-color: hsl(44, 100%, 50%);
   height: 2rem;
   min-width: 5.5rem;
   border: none;
@@ -143,8 +143,8 @@ a {
 }
 .palindrome-checker-main__button:hover {
   background-color: black;
-  border: 2px solid rgb(255, 187, 0);
-  color: rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
+  color: hsl(44, 100%, 50%);
   height: 2rem;
   min-width: 5.5rem;
   border-radius: 5px;
@@ -167,7 +167,7 @@ a {
   width: 33rem;
   margin: 0rem auto 0rem auto;
   padding: 2rem;
-  border: 4px solid rgb(255, 187, 0);
+  border: 4px solid hsl(44, 100%, 50%);
   border-radius: 10px;
   text-align: left;
 }

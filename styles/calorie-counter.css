@@ -59,7 +59,7 @@ a {
 }
 .calorie-counter-header__nav {
   padding: 1.5rem 0 0 0;
-  color: rgb(255, 187, 0);
+  color: hsl(44, 100%, 50%);
 }
 .calorie-counter-header__nav-li {
   margin-left: -2.5rem;
@@ -94,7 +94,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-  border: 4px solid rgb(255, 187, 0);
+  border: 4px solid hsl(44, 100%, 50%);
   border-radius: 10px;
 }
 .calorie-counter-main__header {
@@ -126,19 +126,19 @@ a {
   background-color: black;
   min-width: 10rem;
   height: 2rem;
-  border: 2px solid rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
   border-radius: 3px;
   padding-left: 0.5rem;
-  color: rgb(255, 187, 0);
+  color: hsl(44, 100%, 50%);
   margin-left: 0.5rem;
   font-family: FiraCode-Regular;
 }
 .calorie-counter__input:focus {
   outline: none;
-  background-color: rgb(34, 24, 0);
+  background-color: #221800;
 }
 .calorie-counter__input::placeholder {
-  color: rgb(151, 111, 0);
+  color: #976f00;
   opacity: 1; /* Firefox */
   font-family: FiraCode-Regular;
   font-size: 0.8rem;
@@ -147,20 +147,20 @@ a {
   background-color: black;
   min-width: 10rem;
   height: 2rem;
-  border: 2px solid rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
   border-radius: 3px;
   padding-left: 0.5rem;
-  color: rgb(255, 187, 0);
+  color: hsl(44, 100%, 50%);
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   font-family: FiraCode-Regular;
 }
 .calorie-counter__input2:focus {
   outline: none;
-  background-color: rgb(34, 24, 0);
+  background-color: #221800;
 }
 .calorie-counter__input2::placeholder {
-  color: rgb(151, 111, 0);
+  color: #976f00;
   opacity: 1; /* Firefox */
   font-family: FiraCode-Regular;
   font-size: 0.8rem;
@@ -169,7 +169,7 @@ a {
   margin-bottom: 1rem;
 }
 .calorie-counter__select {
-  background-color: rgb(255, 187, 0);
+  background-color: hsl(44, 100%, 50%);
   border-radius: 5px;
   height: 2rem;
   min-width: 5.5rem;
@@ -180,7 +180,7 @@ a {
   border: none;
 }
 .calorie-counter__button {
-  background-color: rgb(255, 187, 0);
+  background-color: hsl(44, 100%, 50%);
   height: 2rem;
   min-width: 5.5rem;
   border: none;
@@ -190,8 +190,8 @@ a {
 }
 .calorie-counter__button:hover {
   background-color: black;
-  border: 2px solid rgb(255, 187, 0);
-  color: rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
+  color: hsl(44, 100%, 50%);
   height: 2rem;
   min-width: 5.5rem;
   border-radius: 5px;
@@ -203,7 +203,7 @@ a {
   margin-bottom: 1.5rem;
 }
 .calorie-counter__fieldset {
-  border: 2px solid rgb(255, 187, 0);
+  border: 2px solid hsl(44, 100%, 50%);
   font-family: FiraCode-Bold;
 }
 .calorie-counter__input-container {
@@ -213,10 +213,10 @@ a {
   font-family: FiraCode-Regular;
 }
 .calorie-counter__hr {
-  border: 1px solid rgb(255, 187, 0);
+  border: 1px solid hsl(44, 100%, 50%);
 }
 .calorie-counter__hr1 {
-  border: 1px solid rgb(255, 187, 0);
+  border: 1px solid hsl(44, 100%, 50%);
   width: 265%;
 }
 
@@ -232,7 +232,7 @@ a {
   width: 33rem;
   margin: 0rem auto 0rem auto;
   padding: 2rem;
-  border: 4px solid rgb(255, 187, 0);
+  border: 4px solid hsl(44, 100%, 50%);
   border-radius: 10px;
   text-align: left;
   align-items: center;
