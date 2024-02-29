@@ -99,6 +99,7 @@
 
 .playlist-title {
   margin-bottom: 1rem;
+  font-family: FiraCode-Bold;
 }
 
 .previous,
@@ -109,6 +110,7 @@
   background-color: $primary-yellow-darker;
   border: none;
   width: 3rem;
+  height: 3rem;
 }
 
 .previous:hover,
@@ -130,7 +132,11 @@
   background-color: $primary-yellow-darker;
   margin-bottom: 2rem;
   display: block;
-  padding-top: 0.8rem;
+}
+
+#shuffle {
+  padding: 0;
+  margin: 0 0 0 -0.5rem;
 }
 
 .playlist-song-delete {
@@ -190,6 +196,14 @@
   display: flex;
   width: 30rem;
   font-family: FiraCode-Bold;
+}
+
+#player-song-title {
+  margin-bottom: 0.3rem;
+}
+
+#player-song-artist {
+  font-family: FiraCode-Regular;
 }
 
 .playlist-song-duration {
