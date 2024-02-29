@@ -2,7 +2,7 @@
 @import "./partials/typography";
 @import "./partials/variables";
 
-// To save time I have not used SASS consistently for this project. If you'd like to have a look at my SASS skills please check out the code for my portfolio or notebook project.
+// I have not used SASS consistently for this project. If you'd like to have a look at my SASS skills please check out the code for my portfolio or notebook project.
 
 .music-player-body {
   display: flex;
@@ -275,4 +275,26 @@
     text-decoration: underline;
     text-underline-offset: 5px;
   }
+}
+
+#reset {
+  background-color: $primary-yellow;
+  height: 2rem;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  font-family: FiraCode-Regular;
+  margin-right: 1rem;
+  margin-left: 11rem;
+}
+
+#reset:hover {
+  background-color: black;
+  border: 2px solid $primary-yellow;
+  color: $primary-yellow;
+  height: 2rem;
+  min-width: 5.5rem;
+  border-radius: 5px;
+  font-family: FiraCode-Regular;
+  margin-right: 0.8rem;
 }
