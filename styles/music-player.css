@@ -99,7 +99,7 @@ a {
 }
 
 .container {
-  width: 40rem;
+  width: 37rem;
   min-height: 30rem;
   color: hsl(44, 100%, 50%);
   margin: 0 auto 0 auto;
@@ -161,6 +161,10 @@ a {
   cursor: pointer;
 }
 
+.playlist-song-delete:hover .circle {
+  fill: #976f00;
+}
+
 .playlist-song:hover {
   background-color: #221800;
 }
@@ -175,16 +179,13 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   cursor: pointer;
+  width: 31rem;
+  border-radius: 5px;
 }
 
-.playlist-song:hover .playlist-song-info,
-.playlist-song:hover .playlist-song-delete {
+.playlist-song:hover .playlist-song-info {
   background-color: #221800;
   cursor: pointer;
-}
-
-.playlist-song-delete:hover {
-  background-color: #976f00;
 }
 
 .playlist-song-info {
@@ -194,7 +195,25 @@ a {
   border: none;
   width: 92%;
   text-align: left;
-  position: sticky;
+}
+
+.playlist-song-title {
+  display: flex;
+  width: 30rem;
+  font-family: FiraCode-Bold;
+}
+
+.playlist-song-duration {
+  font-style: italic;
+}
+
+.circle:hover {
+  background-color: red;
+}
+
+.song-and-delete-btn {
+  display: flex;
+  justify-content: space-between;
 }
 
 .player-display-song-artist {
