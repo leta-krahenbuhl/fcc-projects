@@ -173,6 +173,7 @@ a {
 .roman-main-info__header {
   font-family: FiraCode-Bold;
   margin-bottom: 1rem;
+  margin-right: -0.3rem;
 }
 .roman-main-info__li {
   margin-bottom: 1rem;
