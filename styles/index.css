@@ -75,9 +75,10 @@ a {
 
 .home-main {
   display: none;
-  text-align: center;
-  width: 100vw;
   align-items: center;
+  overflow-y: auto;
+  flex-grow: 1;
+  text-align: center;
 }
 .home-main__container {
   text-align: left;
@@ -109,4 +110,6 @@ a {
   margin-left: 12rem;
   font-size: 0.6rem;
   margin-bottom: -0.5rem;
+  font-family: "Courier New Bold", Courier Bold, monospace bold;
+  line-height: 0.8rem;
 }/*# sourceMappingURL=index.css.map */
