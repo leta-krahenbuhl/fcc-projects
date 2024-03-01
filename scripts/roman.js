@@ -61,126 +61,7 @@ function clickConvertButton() {
       }
     }
 
-    if (inputField.value < 10) {
-      result.push(romanNumerals(inputField.value));
-      resultJoined = result;
-    }
-
-    if (inputField.value >= 10 && inputField.value <= 39) {
-      const tensPlace = inputSplit[0];
-      const ones = inputSplit[1];
-
-      tensPlaceFunction(tensPlace);
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 40 && inputField.value <= 49) {
-      result.push("XL");
-      const ones = inputSplit[1];
-      result.push(romanNumerals(parseInt(ones)));
-
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 50 && inputField.value <= 89) {
-      const tensPlace = inputSplit[0];
-      const ones = inputSplit[1];
-
-      tensPlaceFunction(tensPlace);
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 90 && inputField.value <= 99) {
-      const ones = inputSplit[1];
-
-      result.push("XC");
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 100 && inputField.value <= 399) {
-      const hundredsPlace = inputSplit[0];
-      const tensPlace = inputSplit[1];
-      const ones = inputSplit[2];
-
-      if (hundredsPlace == 1) {
-        result.push("C");
-      } else if (hundredsPlace == 2) {
-        result.push("CC");
-      } else {
-        result.push("CCC");
-      }
-
-      tensPlaceFunction(tensPlace);
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 400 && inputField.value <= 499) {
-      const tensPlace = inputSplit[1];
-      const ones = inputSplit[2];
-
-      result.push("CD");
-
-      tensPlaceFunction(tensPlace);
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-      console.log(`line 162: ${resultJoined}`);
-    }
-
-    if (inputField.value >= 500 && inputField.value <= 899) {
-      const hundredsPlace = inputSplit[0];
-      const tensPlace = inputSplit[1];
-      const ones = inputSplit[2];
-
-      if (hundredsPlace == 5) {
-        result.push("D");
-      } else if (hundredsPlace == 6) {
-        result.push("DC");
-      } else if (hundredsPlace == 7) {
-        result.push("DCC");
-      } else if (hundredsPlace == 8) {
-        result.push("DCCC");
-      }
-
-      tensPlaceFunction(tensPlace);
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 900 && inputField.value <= 999) {
-      const tensPlace = inputSplit[1];
-      const ones = inputSplit[2];
-
-      result.push("CM");
-
-      tensPlaceFunction(tensPlace);
-
-      result.push(romanNumerals(parseInt(ones)));
-      resultJoined = result.join("");
-    }
-
-    if (inputField.value >= 1000 && inputField.value <= 3999) {
-      const thousandsPlace = inputSplit[0];
-      const hundredsPlace = inputSplit[1];
-      const tensPlace = inputSplit[2];
-      const ones = inputSplit[3];
-
-      if (thousandsPlace == 1) {
-        result.push("M");
-      } else if (thousandsPlace == 2) {
-        result.push("MM");
-      } else if (thousandsPlace == 3) {
-        result.push("MMM");
-      }
-
+    function hundredsPlaceFunction(hundredsPlace) {
       if (hundredsPlace == 1) {
         result.push("C");
       } else if (hundredsPlace == 2) {
@@ -200,9 +81,49 @@ function clickConvertButton() {
       } else if (hundredsPlace == 9) {
         result.push("CM");
       }
+    }
+
+    if (inputField.value < 10) {
+      result.push(romanNumerals(inputField.value));
+      resultJoined = result;
+    }
+
+    if (inputField.value >= 10 && inputField.value <= 99) {
+      const tensPlace = inputSplit[0];
+      const ones = inputSplit[1];
 
       tensPlaceFunction(tensPlace);
+      result.push(romanNumerals(parseInt(ones)));
+      resultJoined = result.join("");
+    }
 
+    if (inputField.value >= 100 && inputField.value <= 999) {
+      const hundredsPlace = inputSplit[0];
+      const tensPlace = inputSplit[1];
+      const ones = inputSplit[2];
+
+      hundredsPlaceFunction(hundredsPlace);
+      tensPlaceFunction(tensPlace);
+      result.push(romanNumerals(parseInt(ones)));
+      resultJoined = result.join("");
+    }
+
+    if (inputField.value >= 1000 && inputField.value <= 3999) {
+      const thousandsPlace = inputSplit[0];
+      const hundredsPlace = inputSplit[1];
+      const tensPlace = inputSplit[2];
+      const ones = inputSplit[3];
+
+      if (thousandsPlace == 1) {
+        result.push("M");
+      } else if (thousandsPlace == 2) {
+        result.push("MM");
+      } else if (thousandsPlace == 3) {
+        result.push("MMM");
+      }
+
+      hundredsPlaceFunction(hundredsPlace);
+      tensPlaceFunction(tensPlace);
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
     }
