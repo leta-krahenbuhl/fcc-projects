@@ -55,9 +55,6 @@ a {
   font-family: FiraCode-Bold;
   cursor: pointer;
 }
-.roman-header__h1:hover {
-  text-decoration: none;
-}
 .roman-header__nav {
   padding: 1.5rem 0 0 0;
   color: hsl(44, 100%, 50%);
@@ -94,7 +91,7 @@ a {
 }
 .roman-main__container {
   width: 30rem;
-  min-height: 17.4rem;
+  height: 11rem;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -150,9 +147,11 @@ a {
   border-radius: 5px;
   font-family: FiraCode-Regular;
 }
-.roman-main__result {
+.roman-main__output {
   margin-top: 1.5rem;
   font-family: FiraCode-Bold;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
 }
 .roman-main__scroll {
   font-style: italic;
@@ -163,7 +162,7 @@ a {
   text-underline-offset: 5px;
 }
 
-.roman-info {
+.roman-main-info {
   width: 33rem;
   margin: 0rem auto 0rem auto;
   padding: 2rem;
@@ -171,22 +170,22 @@ a {
   border-radius: 10px;
   text-align: left;
 }
-.roman-info__header {
+.roman-main-info__header {
   font-family: FiraCode-Bold;
   margin-bottom: 1rem;
 }
-.roman-info__li {
+.roman-main-info__li {
   margin-bottom: 1rem;
 }
-.roman-info__link:hover {
+.roman-main-info__link:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-.roman-info__scroll {
+.roman-main-info__scroll {
   margin-top: 1.5rem;
   font-style: italic;
 }
-.roman-info__scroll:hover {
+.roman-main-info__scroll:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }/*# sourceMappingURL=roman.css.map */

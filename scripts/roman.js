@@ -16,8 +16,7 @@ function clickConvertButton() {
   } else if (inputField.value >= 4000) {
     output.innerText = "Please enter a number between 1 and 3999";
   } else if (/[^0-9]/g.test(inputField.value)) {
-    output.innerText =
-      "Please make sure you enter numbers only, no letters or special characters.";
+    output.innerText = "Please make sure you enter numbers only";
   } else {
     const inputSplit = inputField.value.toString().split("");
     const result = [];
