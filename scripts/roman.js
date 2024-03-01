@@ -39,6 +39,28 @@ function clickConvertButton() {
       return romanNumeralsOneDigit[number];
     }
 
+    function tensPlaceFunction(tensPlace) {
+      if (tensPlace == 1) {
+        result.push("X");
+      } else if (tensPlace == 2) {
+        result.push("XX");
+      } else if (tensPlace == 3) {
+        result.push("XXX");
+      } else if (tensPlace == 4) {
+        result.push("XL");
+      } else if (tensPlace == 5) {
+        result.push("L");
+      } else if (tensPlace == 6) {
+        result.push("LX");
+      } else if (tensPlace == 7) {
+        result.push("LXX");
+      } else if (tensPlace == 8) {
+        result.push("LXXX");
+      } else if (tensPlace == 9) {
+        result.push("XC");
+      }
+    }
+
     if (inputField.value < 10) {
       result.push(romanNumerals(inputField.value));
       resultJoined = result;
@@ -48,16 +70,8 @@ function clickConvertButton() {
       const tensPlace = inputSplit[0];
       const ones = inputSplit[1];
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else {
-        result.push("XXX");
-      }
-
+      tensPlaceFunction(tensPlace);
       result.push(romanNumerals(parseInt(ones)));
-
       resultJoined = result.join("");
     }
 
@@ -73,15 +87,7 @@ function clickConvertButton() {
       const tensPlace = inputSplit[0];
       const ones = inputSplit[1];
 
-      if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else {
-        result.push("LXXX");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
@@ -109,25 +115,7 @@ function clickConvertButton() {
         result.push("CCC");
       }
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else if (tensPlace == 2) {
-        result.push("XXX");
-      } else if (tensPlace == 4) {
-        result.push("XL");
-      } else if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else if (tensPlace == 8) {
-        result.push("LXXX");
-      } else if (tensPlace == 9) {
-        result.push("XC");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
@@ -139,25 +127,7 @@ function clickConvertButton() {
 
       result.push("CD");
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else if (tensPlace == 2) {
-        result.push("XXX");
-      } else if (tensPlace == 4) {
-        result.push("XL");
-      } else if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else if (tensPlace == 8) {
-        result.push("LXXX");
-      } else if (tensPlace == 9) {
-        result.push("XC");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
@@ -179,25 +149,7 @@ function clickConvertButton() {
         result.push("DCCC");
       }
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else if (tensPlace == 2) {
-        result.push("XXX");
-      } else if (tensPlace == 4) {
-        result.push("XL");
-      } else if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else if (tensPlace == 8) {
-        result.push("LXXX");
-      } else if (tensPlace == 9) {
-        result.push("XC");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
@@ -209,25 +161,7 @@ function clickConvertButton() {
 
       result.push("CM");
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else if (tensPlace == 2) {
-        result.push("XXX");
-      } else if (tensPlace == 4) {
-        result.push("XL");
-      } else if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else if (tensPlace == 8) {
-        result.push("LXXX");
-      } else if (tensPlace == 9) {
-        result.push("XC");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
@@ -267,25 +201,7 @@ function clickConvertButton() {
         result.push("CM");
       }
 
-      if (tensPlace == 1) {
-        result.push("X");
-      } else if (tensPlace == 2) {
-        result.push("XX");
-      } else if (tensPlace == 2) {
-        result.push("XXX");
-      } else if (tensPlace == 4) {
-        result.push("XL");
-      } else if (tensPlace == 5) {
-        result.push("L");
-      } else if (tensPlace == 6) {
-        result.push("LX");
-      } else if (tensPlace == 7) {
-        result.push("LXX");
-      } else if (tensPlace == 8) {
-        result.push("LXXX");
-      } else if (tensPlace == 9) {
-        result.push("XC");
-      }
+      tensPlaceFunction(tensPlace);
 
       result.push(romanNumerals(parseInt(ones)));
       resultJoined = result.join("");
