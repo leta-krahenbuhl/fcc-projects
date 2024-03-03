@@ -4,8 +4,7 @@
 
 .home-body {
   display: flex;
-
-  font-family: FiraCode-Regular;
+  font-family: FiraCode-Regular, "Courier New", Courier, monospace;
   padding: 1.5rem;
   background-color: black;
   color: rgb(255, 187, 0);
@@ -49,17 +48,21 @@
 .home-main {
   display: none;
   align-items: center;
+  justify-content: center;
   overflow-y: auto;
   flex-grow: 1;
   text-align: center;
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: left;
     max-width: 50rem;
     max-height: 40rem;
     background-color: black;
     color: $primary-yellow;
-    margin: 0 auto 0 auto;
+    margin: 0 2rem 0 2rem;
     padding: 2rem;
     border: 4px solid $primary-yellow;
     border-radius: 10px;
@@ -68,6 +71,7 @@
   &__h2 {
     font-family: FiraCode-Bold;
     margin-bottom: 1rem;
+    align-self: flex-start;
   }
 
   &__text {
@@ -85,7 +89,6 @@
 
   &__ascii {
     margin-top: 2rem;
-    margin-left: 12rem;
     font-size: 0.6rem;
     margin-bottom: -0.5rem;
     font-family: "Courier New Bold", Courier Bold, monospace bold;
